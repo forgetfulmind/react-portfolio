@@ -2,7 +2,7 @@
 @import '../styles/custom-properties.css';
 
 .content {
-  background: var(--color-white);
+  background-color: rgb(26, 24, 24);
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
@@ -12,6 +12,14 @@
 
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
 
   @nest & a {
     color: inherit;

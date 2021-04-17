@@ -10,11 +10,14 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import ProjectPreviewGrid from "../components/project-preview-grid";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+// import Header from "../components/header";
+
 
 export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      subtitle
       description
       keywords
     }
@@ -87,7 +90,8 @@ const IndexPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1 hidden>Welcome to {site.title}</h1>
+        <h1>Welcome to {site.title}</h1>
+        <h2>{site.subtitle}</h2>
         {projectNodes && (
           <ProjectPreviewGrid
             title="Latest projects"

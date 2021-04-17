@@ -1,17 +1,22 @@
 .root {
   display: block;
-  color: inherit;
+  color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
+  color: darkorchid;
+  text-align: center;
 }
 
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
   background: #eee;
+  border: grey 1px solid;
+  box-shadow: 3px 3px 10px 2px #0000007c;
 
   @nest & img {
     position: absolute;
