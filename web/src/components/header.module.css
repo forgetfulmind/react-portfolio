@@ -1,17 +1,37 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+
+
+.mascot{
+  width: 8%;
+  height: auto;
+
+  @media (--media-max-small) {
+    width: 20%;
+  }
+
+}
+
+.link {
+  margin: 0px
+
+}
+
+
 .root {
   position: relative;
   z-index: 100;
   background-color: black;
+  font-weight: bold;
   color: white;
+  border-bottom: solid white 5px;
 }
 
 .wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 960px;
+  margin: 10px auto;
+  /* max-width: 960px; */
   padding: 1em;
   display: flex;
 
@@ -60,6 +80,8 @@
 
 .nav {
   display: none;
+  margin-top: auto;
+  margin-bottom: auto;
 
   @nest & ul {
     margin: 0;
