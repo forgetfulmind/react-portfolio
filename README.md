@@ -1,38 +1,54 @@
-# react-portfolio
 
-A portfolio using structured content and a static site builder.
+  [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+  # Portfolio Website - React
 
-Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-gatsby-portfolio).
+  <h2>Description:</h2> A portfolio website built in react on the sanity.io cms framework
 
-## What you have
+  <h2>Table of Contents:</h2> 
 
-- A blazing fast portfolio with [Gatsby.js](https://gatsbyjs.org)
-- Structured content using [Sanity.io](https://www.sanity.io)
-- Global deployment on [Netlify](https://netlify.com)
+  [Installation](#install)
 
-## Quick start
+  [Usage](#usage)
 
-1. Clone this repository from your GitHub account
-2. `npm install` in the project root folder on local
-3. `npm run dev` to start the Studio and frontend locally
-   - Your Studio should be running on [http://localhost:3333](http://localhost:3333)
-   - Your frontend should be running on [http://localhost:8000](http://localhost:8000)
-4. `npm run build` to build to production locally
+  [License](#license)
 
-## Enable real-time content preview in development
+  [Contributing](#contributing)
 
-1. Go to your [project’s API settings on manage.sanity.io](https://manage.sanity.io/projects/2o7gtxly/settings/api) and create a token with read rights.
-2. Copy `.env.development.template` to `.env.development` and paste in the token: `SANITY_READ_TOKEN="yourTokenHere"`.
-3. Restart the development server (`ctrl + C` and `npm run dev`).
+  [Tests](#tests)
 
-If you want to disable the preview you can set `watchMode: false` in gatsby-config.js. If you just want to preview published changes you can set `overlayDrafts: false` in gatsby-config.js.
+  [Questions](#questions)
+  
+  [Screenshots](#screenshots)
 
-## Deploy changes
+  <h3><a name="install">Installation:</a></h3>
 
-Netlify automatically deploys new changes commited to the `master` branch on GitHub. If you want to change the deployment branch you may do so in [build & deploy settings on Netlify](https://www.netlify.com/docs/continuous-deployment/#branches-deploys).
+  please use npm rn dev and refer to the sanity.io documentation for more information
 
-## Get help
+  <h3><a name="usage">Usage:</a></h3>
 
-[![Slack Community Button](https://slack.sanity.io/badge.svg)](https://slack.sanity.io/)
+  feel free to fork me!
 
-Join [Sanity’s developer community](https://slack.sanity.io) or ping us [on twitter](https://twitter.com/sanity_io).
+  <h3><a name="liscense">License:</a></h3>
+
+  This work is covered under the CC0 1.0 Universal license.
+
+  Full license information can be found here: [License: CC0-1.0](http://creativecommons.org/publicdomain/zero/1.0/)
+
+  <h3><a name="contributing">Contributing:</a></h3> 
+
+  freel free to fork me! 
+
+  <a name="tests"><h3>Tests:</h3></a> 
+
+  no test procedures exist at this time. refer to sanity.io documentation for more informaiton 
+
+  <a name="questions"><h3>Questions:</h3></a>  
+
+  gitHub Name: forgetfulmind
+
+  gitHub Link: <a href="https://github.com/forgetfulmind">https://github.com/forgetfulmind</a>
+
+  eMail: forgetfulmind@gmail.com
+
+  <a name="screenshots"><h3>Screenshots:</h3></a>  
+
