@@ -20,6 +20,11 @@ export default {
       title: 'Subtitle'
     },
     {
+      name: 'face',
+      title: 'profile picture',
+      type: 'figure'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',

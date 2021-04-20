@@ -11,6 +11,9 @@ import ProjectPreviewGrid from "../components/project-preview-grid";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 // import Header from "../components/header";
+import { buildImageObj } from "../lib/helpers";
+import { imageUrlFor } from "../lib/image-url";
+import mail from "../assets/Mail-icon.png"
 
 
 export const query = graphql`
@@ -20,16 +23,7 @@ export const query = graphql`
       subtitle
       description
       keywords
-    }
-    projects: allSanitySampleProject(
-      limit: 6
-      sort: { fields: [publishedAt], order: DESC }
-      filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
-    ) {
-      edges {
-        node {
-          id
-          mainImage {
+      face {
             crop {
               _key
               _type
@@ -50,15 +44,10 @@ export const query = graphql`
               _id
             }
             alt
-          }
-          title
-          _rawExcerpt
-          slug {
-            current
-          }
         }
       }
-    }
+    
+
   }
 `;
 
@@ -90,8 +79,40 @@ const IndexPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1>Welcome to {site.title}</h1>
-        <h2>{site.subtitle}</h2>
+        {site.face && site.face.asset && (
+        <div className={"faceCont"}>
+          <img className={"face"}
+          src={imageUrlFor(buildImageObj(site.face))
+            .width(300)
+           }
+            alt={site.face.alt}
+          />
+        </div>
+      )}
+        <h1 className= "title">{site.title}</h1>
+        <h2 className= "subtitle">{site.subtitle}</h2>
+        <div>
+                                  <div className= "subhead" ><strong>Resume:</strong></div>
+                                  <div>
+                                  <a href="https://drive.google.com/file/d/1ScOGeYWKnBhbDZpkYfHyqUayc-h0C09z/view?usp=sharing" target="_blank">Download a PDF</a> 
+                                  </div>
+                                  <div className= "subhead"><strong>Current Position:</strong></div><div>Marketing Coordinator | Telos Alliance</div>
+                                  <div className= "subhead"><strong>Contact Information:</strong></div>
+                                    <div>
+                                      <div className="mailRow">
+                                      Email:&nbsp;<a href="mailto:forgetfulmind@gmail.com"> forgetfulmind@gmail.com</a>
+                                      </div>
+                                      <div className="mailRow">
+                                     Phone: ‪(440) 290-9337‬
+                                     </div>
+                                     <div className="mailRow">
+                                     Find me online at:&nbsp;
+                                     <a href="https://www.linkedin.com/in/bryan-shay-31799995" target="_blank">LinkedIn</a> | <a href="https://github.com/forgetfulmind" target="_blank">GitHub</a> 
+                                     </div>
+                                   </div>
+                                  
+                                    
+                            </div>
       </Container>
     </Layout>
   );

@@ -19,3 +19,40 @@ body > div,
 body > div > div {
   height: 110%;
 }
+
+.face{
+  border: grey;
+  border-width: 2;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 2px #0000007c;
+}
+
+.faceCont{
+  display: flex;
+  justify-content: center;
+}
+
+.mail{
+  width: 3vw;
+  /* height: auto; */
+}
+
+.mailRow{
+  display: flex;
+  align-items: center;
+}
+ 
+.title{
+  text-shadow: 2px 1px 4px rgba(105, 105, 105, 0.45);
+}
+
+.subtitle{
+  text-shadow: 2px 1px 4px rgba(105, 105, 105, 0.45);
+}
+
+.subhead{
+  color: rgb(175, 175, 175);
+  text-shadow: 2px 1px 4px rgba(75, 75, 75, 0.45);
+
+}

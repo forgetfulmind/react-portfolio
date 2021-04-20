@@ -26,6 +26,7 @@
   font-weight: bold;
   color: white;
   border-bottom: solid white 5px;
+  box-shadow: 3px 3px 10px 2px #0000007c;
 }
 
 .wrapper {
