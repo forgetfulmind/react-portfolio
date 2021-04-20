@@ -107,7 +107,7 @@ const IndexPage = props => {
                                      </div>
                                      <div className="mailRow">
                                      Find me online at:&nbsp;
-                                     <a href="https://www.linkedin.com/in/bryan-shay-31799995" target="_blank">LinkedIn</a> | <a href="https://github.com/forgetfulmind" target="_blank">GitHub</a> 
+                                     <a href="https://www.linkedin.com/in/bryan-shay-31799995" target="_blank">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/forgetfulmind" target="_blank">GitHub</a> 
                                      </div>
                                    </div>
                                   

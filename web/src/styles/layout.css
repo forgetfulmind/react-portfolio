@@ -44,15 +44,13 @@ body > div > div {
 }
  
 .title{
-  text-shadow: 2px 1px 4px rgba(105, 105, 105, 0.45);
+  text-shadow: 2px 1px 3px rgba(131, 131, 131, 0.6);
 }
 
 .subtitle{
-  text-shadow: 2px 1px 4px rgba(105, 105, 105, 0.45);
+  text-shadow: 2px 1px 3px rgba(131, 131, 131, 0.6);
 }
 
 .subhead{
-  color: rgb(175, 175, 175);
-  text-shadow: 2px 1px 4px rgba(75, 75, 75, 0.45);
-
+  color: rgb(92, 92, 92);
 }
